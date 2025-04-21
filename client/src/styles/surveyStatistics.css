@@ -1,0 +1,169 @@
+.survey-statistics-container {
+  padding: 2rem 1rem;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.stats-tabs {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.stat-summary {
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.stat-label {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.question-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.question-item {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.question-item:hover {
+  background-color: #f8f9fa;
+}
+
+.question-item.active {
+  background-color: #e9ecef;
+  border-left: 3px solid #0d6efd;
+}
+
+.question-number {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6c757d;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.question-text {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 0.75rem;
+}
+
+.question-type {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.mc-stats, .rating-stats, .text-stats, .wordcloud-stats {
+  padding: 1rem;
+}
+
+.rating-avg {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.avg-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.avg-label {
+  color: #6c757d;
+}
+
+.common-words {
+  margin-top: 1rem;
+}
+
+.word-badge {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.sample-responses {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.sample-response {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  display: flex;
+}
+
+.response-number {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6c757d;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.response-text {
+  flex: 1;
+}
+
+.wordcloud-placeholder {
+  min-height: 300px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-item {
+  display: inline-block;
+  margin: 0.3rem;
+  transition: transform 0.2s;
+}
+
+.word-item:hover {
+  transform: scale(1.1);
+}

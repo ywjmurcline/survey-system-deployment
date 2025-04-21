@@ -1,0 +1,48 @@
+.home-container {
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2d2d2d;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #0062b2;
+  }
+  
+  .home-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .home-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+  
+  .home-nav a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Fix the profile icon size */
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .profile-link {
+    display: flex;
+    align-items: center;
+  }

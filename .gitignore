@@ -1,0 +1,33 @@
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Dependencies
+node_modules/
+/client/node_modules/
+/server/node_modules/
+
+# Build files
+/client/build/
+/client/dist/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# MongoDB data
+/data/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db.env

@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+/* Add this near the top of your file */
+.survey-title {
+  margin-top: 20px !important; /* Override the default margin to account for navbar */
+}
+
+
+.admin-usertype {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.admin-usertype .div-wrapper {
+  background-color: #2d2d2d;
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.admin-usertype .text-wrapper {
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 17px;
+}
+
+/* Update the following class */
+.admin-usertype .QUIZLET {
+  color: #0062b2;
+  font-family: "Jost", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative; /* Changed from absolute */
+  margin-top: 84px;
+}
+
+.admin-usertype .span {
+  color: #0062b2;
+  font-family: "Jost", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.admin-usertype .text-wrapper-2 {
+  font-size: 36px;
+}
+
+/* And update the frame-2 to be positioned relative instead of absolute */
+.admin-usertype .frame-2 {
+  align-items: center;
+  display: flex;
+  gap: 167px;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 0;
+  flex-wrap: wrap;
+  margin-top: 100px; /* Add margin instead of absolute positioning */
+  position: relative; /* Changed from absolute */
+}
+
+.admin-usertype .PC-user {
+  height: 75px;
+  position: absolute;
+  top: 84px;
+  right: 20px;
+  width: 75px;
+}
+
+.admin-usertype .img {
+  height: 75px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 75px;
+  border-radius: 50%;
+}
+
+/* PC Survey Button */
+.PC-survey-button {
+  background-color: #ffffff;
+  border: 5px solid;
+  border-color: #0062b2;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 450px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.PC-survey-button:hover {
+  background-color: #0062b2;
+  transform: translateY(-10px);
+}
+
+.PC-survey-button .create-new-survey {
+  color: #0062b2;
+  font-family: "Jost", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  left: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 307px;
+  transition: color 0.3s ease;
+}
+
+.PC-survey-button:hover .create-new-survey {
+  color: #ffffff;
+}
+
+.PC-survey-button .frame {
+  border-radius: 10px;
+  height: 240px;
+  left: 40px;
+  position: absolute;
+  top: 40px;
+  width: 370px;
+}
+
+.PC-survey-button .div {
+  align-items: flex-end;
+  display: flex;
+  gap: 30px;
+  height: 216px;
+  justify-content: center;
+  position: relative;
+  top: 24px;
+  width: 370px;
+  transition: top 0.3s ease, height 0.3s ease;
+}
+
+.PC-survey-button:hover .div {
+  top: 11px;
+  height: 229px;
+}
+
+.PC-survey-button .rectangle {
+  background-color: #5B76F1;
+  border-radius: 10px;
+  height: 78px;
+  position: relative;
+  width: 56px;
+  transition: background-color 0.3s ease, height 0.3s ease;
+}
+
+.PC-survey-button .rectangle-2 {
+  background-color: #4AD19D;
+  border-radius: 10px;
+  height: 157px;
+  position: relative;
+  width: 56px;
+  transition: background-color 0.3s ease, height 0.3s ease;
+}
+
+.PC-survey-button .rectangle-3 {
+  background-color: #FF6B6B;
+  border-radius: 10px;
+  height: 216px;
+  position: relative;
+  width: 56px;
+  transition: background-color 0.3s ease, height 0.3s ease;
+}
+
+.PC-survey-button .rectangle-4 {
+  background-color: #B77CF2;
+  border-radius: 10px;
+  height: 113px;
+  position: relative;
+  width: 56px;
+  transition: background-color 0.3s ease, height 0.3s ease;
+}
+
+.PC-survey-button:hover .rectangle,
+.PC-survey-button:hover .rectangle-2,
+.PC-survey-button:hover .rectangle-3,
+.PC-survey-button:hover .rectangle-4 {
+  background-color: #ffffff;
+}
+
+.PC-survey-button:hover .rectangle {
+  height: 103px;
+}
+
+.PC-survey-button:hover .rectangle-2 {
+  height: 229px;
+}
+
+.PC-survey-button:hover .rectangle-3 {
+  height: 146px;
+}
+
+.PC-survey-button:hover .rectangle-4 {
+  height: 63px;
+}
+
+/* PC Participant */
+.PC-participant {
+  border: 5px solid;
+  border-color: #0062b2;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 450px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.PC-participant:hover {
+  transform: translateY(-10px);
+}
+
+.PC-participant .frame {
+  height: 240px;
+  left: 40px;
+  position: absolute;
+  top: 40px;
+  width: 370px;
+}
+
+.PC-participant .overlap {
+  height: 201px;
+  position: relative;
+  top: 39px;
+  transition: left 0.3s ease, width 0.3s ease;
+}
+
+.PC-participant .overlap-group {
+  height: 201px;
+  position: absolute;
+  top: 0;
+  transition: left 0.3s ease, width 0.3s ease;
+}
+
+.PC-participant .subtract {
+  height: 93px;
+  position: absolute;
+  top: 108px;
+  transition: left 0.3s ease;
+  width: 257px;
+}
+
+.PC-participant .ellipse {
+  border-radius: 59.5px;
+  height: 119px;
+  position: absolute;
+  top: 0;
+  width: 119px;
+  transition: background-color 0.3s ease, left 0.3s ease;
+}
+
+.PC-participant .rectangle {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 43px;
+  left: 0;
+  position: absolute;
+  top: 65px;
+  width: 75px;
+  transition: top 0.3s ease;
+}
+
+.PC-participant .div {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 43px;
+  position: absolute;
+  width: 102px;
+  transition: left 0.3s ease, top 0.3s ease;
+}
+
+.PC-participant .rectangle-2 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 43px;
+  left: 0;
+  position: absolute;
+  top: 60px;
+  width: 75px;
+}
+
+.PC-participant .join-as-a {
+  font-family: "Jost", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  left: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 307px;
+  transition: color 0.3s ease;
+}
+
+.PC-participant.default {
+  background-color: #ffffff;
+}
+
+.PC-participant.variant-2 {
+  background-color: #0062b2;
+}
+
+.PC-participant.default .overlap {
+  left: 20px;
+  width: 348px;
+}
+
+.PC-participant.variant-2 .overlap {
+  left: 15px;
+  width: 355px;
+}
+
+.PC-participant.default .overlap-group {
+  left: 0;
+  width: 294px;
+}
+
+.PC-participant.variant-2 .overlap-group {
+  left: 42px;
+  width: 257px;
+}
+
+.PC-participant.default .subtract {
+  left: 37px;
+}
+
+.PC-participant.variant-2 .subtract {
+  left: 0;
+}
+
+.PC-participant.default .ellipse {
+  background-color: #0062b2;
+  left: 106px;
+}
+
+.PC-participant.variant-2 .ellipse {
+  background-color: #ffffff;
+  left: 69px;
+}
+
+.PC-participant.default .div {
+  left: 246px;
+  top: 15px;
+}
+
+.PC-participant.variant-2 .div {
+  left: 253px;
+  top: 6px;
+}
+
+.PC-participant.default .join-as-a {
+  color: #0062b2;
+}
+
+.PC-participant.variant-2 .join-as-a {
+  color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .admin-usertype .frame-2 {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .admin-usertype .frame-2 {
+    flex-direction: column;
+    padding: 60px 0;
+  }
+  
+  .PC-survey-button, .PC-participant {
+    width: 380px;
+    height: 450px;
+  }
+  
+  .PC-survey-button .create-new-survey,
+  .PC-participant .join-as-a {
+    font-size: 36px;
+    top: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-usertype .QUIZLET {
+    font-size: 36px;
+  }
+  
+  .admin-usertype .text-wrapper-2 {
+    font-size: 28px;
+  }
+  
+  .PC-survey-button, .PC-participant {
+    width: 320px;
+    height: 400px;
+  }
+  
+  .PC-survey-button .frame,
+  .PC-participant .frame {
+    transform: scale(0.8);
+    transform-origin: left top;
+  }
+  
+  .PC-survey-button .create-new-survey,
+  .PC-participant .join-as-a {
+    font-size: 32px;
+    top: 240px;
+  }
+}
+
+/* icon */
+.admin-usertype .PC-user {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.admin-usertype .PC-user .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}

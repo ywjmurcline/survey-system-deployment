@@ -1,0 +1,40 @@
+.participant-counter {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .participant-icon {
+    font-size: 24px;
+    margin-right: 12px;
+    color: var(--primary-color);
+  }
+  
+  .participant-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .participant-count {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .participant-label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .join-code {
+    margin-left: auto;
+    padding: 4px 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-family: monospace;
+    font-weight: 600;
+    color: var(--primary-color);
+  }

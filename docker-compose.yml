@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  client:
+    build: ./client
+    image: client:ssl
+    ports:
+      - "3001:80"  # Change client to run on 3001
+      - "3002:443"  # Change client to run on 3001
+    environment:
+      - REACT_APP_API_URL=http://localhost:3000/api  # Point to server on 3000
+    depends_on:
+      - server
+
+  server:
+    build: ./server
+    ports:
+      - "3000:3000"  # Match the actual running port (3000)
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/survey-system
+      - PORT=3000
+      - JWT_SECRET=665eced222ba5d45aa7e3774cc8d30bb4fc122be7ef6c9e6ec31996bdd78e184a00460c1ab1436c615016dcfc4ece66d3f581fc41c7380adf154a850149ab7c7
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:5
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
